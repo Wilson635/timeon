@@ -19,3 +19,9 @@
   border: 1px solid rgba(225,225,225,0.18);
 }
 
+@layer base {
+  body {
+    @apply bg-n-8 text-n-1 text-base;
+  }
+}
+
