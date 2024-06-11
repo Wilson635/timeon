@@ -3,7 +3,7 @@ import { WeatherLayout } from './layout'
 
 function App() {
   return (
-    <div className='w-full h-screen text-white px-8'>
+    <div className='w-full h-screen px-8 text-white pt-[4.75rem] lg:pt-[5.25rem]'>
       <WeatherLayout />
     </div>
   )
