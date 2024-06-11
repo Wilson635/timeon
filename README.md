@@ -1,41 +1,47 @@
 Title
 ===
-Abstract:xxx
-## Papar Information
-- Title:  `paper name`
-- Authors:  `A`,`B`,`C`
-- Preprint: [https://arxiv.org/abs/xx]()
-- Full-preprint: [paper position]()
-- Video: [video position]()
 
-## Install & Dependence
-- python
-- pytorch
-- numpy
+## Information
+- Title:  `Timeon`
+- Authors:  `Wilson635`
+- Live Website: 
 
-## Dataset Preparation
-| Dataset | Download |
-| ---     | ---   |
-| dataset-A | [download]() |
-| dataset-B | [download]() |
-| dataset-C | [download]() |
+## Tech Stack
+- [Shadcn/ui](https://ui.shadcn.com/)
+- [Vite.js](https://vitejs.dev/guide/)
+- [Appwrite](https://appwrite.io/)
+- [Tailwindcss](https://tailwindcss.com/)
 
-## Use
-- for train
-  ```
-  python train.py
-  ```
-- for test
-  ```
-  python test.py
-  ```
-## Pretrained model
-| Model | Download |
-| ---     | ---   |
-| Model-1 | [download]() |
-| Model-2 | [download]() |
-| Model-3 | [download]() |
+## **Prerequisites**
 
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+## **Cloning the Repository**
+
+```bash
+git clone https://github.com/Wilson635/timeon.git
+cd timeon
+```
+
+## **Installation**
+
+Install the project dependencies using npm:
+
+```bash
+npm install
+```
+
+## **Running the Project**
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
 
 ## Directory Hierarchy
 ```
@@ -122,10 +128,12 @@ Abstract:xxx
 |        |—— deps
 |            |—— axios.js
 |            |—— axios.js.map
-|            |—— chunk-FOVBMOLE.js
-|            |—— chunk-FOVBMOLE.js.map
-|            |—— chunk-RSJERJUL.js
-|            |—— chunk-RSJERJUL.js.map
+|            |—— chunk-DFKQJ226.js
+|            |—— chunk-DFKQJ226.js.map
+|            |—— chunk-ZOIWZPCO.js
+|            |—— chunk-ZOIWZPCO.js.map
+|            |—— framer-motion.js
+|            |—— framer-motion.js.map
 |            |—— package.json
 |            |—— react-dom_client.js
 |            |—— react-dom_client.js.map
@@ -5338,6 +5346,400 @@ Abstract:xxx
 |        |—— LICENSE
 |        |—— package.json
 |        |—— README.md
+|    |—— framer-motion
+|        |—— dist
+|            |—— cjs
+|                |—— dom-entry-Dvf42Jkp.js
+|                |—— dom-entry.js
+|                |—— index.js
+|            |—— dom-entry.d.ts
+|            |—— dom.js
+|            |—— es
+|                |—— animation
+|                    |—— animate.mjs
+|                    |—— animators
+|                        |—— AcceleratedAnimation.mjs
+|                        |—— BaseAnimation.mjs
+|                        |—— drivers
+|                            |—— driver-frameloop.mjs
+|                        |—— MainThreadAnimation.mjs
+|                        |—— utils
+|                            |—— can-animate.mjs
+|                        |—— waapi
+|                            |—— easing.mjs
+|                            |—— index.mjs
+|                            |—— utils
+|                                |—— get-final-keyframe.mjs
+|                    |—— generators
+|                        |—— inertia.mjs
+|                        |—— keyframes.mjs
+|                        |—— spring
+|                            |—— find.mjs
+|                            |—— index.mjs
+|                        |—— utils
+|                            |—— calc-duration.mjs
+|                            |—— velocity.mjs
+|                    |—— GroupPlaybackControls.mjs
+|                    |—— hooks
+|                        |—— animation-controls.mjs
+|                        |—— use-animate.mjs
+|                        |—— use-animated-state.mjs
+|                        |—— use-animation.mjs
+|                    |—— interfaces
+|                        |—— motion-value.mjs
+|                        |—— single-value.mjs
+|                        |—— visual-element-target.mjs
+|                        |—— visual-element-variant.mjs
+|                        |—— visual-element.mjs
+|                    |—— optimized-appear
+|                        |—— data-id.mjs
+|                        |—— get-appear-id.mjs
+|                        |—— handoff.mjs
+|                        |—— start.mjs
+|                        |—— store-id.mjs
+|                        |—— store.mjs
+|                    |—— sequence
+|                        |—— create.mjs
+|                        |—— utils
+|                            |—— calc-time.mjs
+|                            |—— edit.mjs
+|                            |—— sort.mjs
+|                    |—— utils
+|                        |—— create-visual-element.mjs
+|                        |—— default-transitions.mjs
+|                        |—— is-animatable.mjs
+|                        |—— is-animation-controls.mjs
+|                        |—— is-dom-keyframes.mjs
+|                        |—— is-keyframes-target.mjs
+|                        |—— is-none.mjs
+|                        |—— stagger.mjs
+|                        |—— transitions.mjs
+|                |—— components
+|                    |—— AnimatePresence
+|                        |—— index.mjs
+|                        |—— PopChild.mjs
+|                        |—— PresenceChild.mjs
+|                        |—— use-presence.mjs
+|                    |—— AnimateSharedLayout.mjs
+|                    |—— LayoutGroup
+|                        |—— index.mjs
+|                    |—— LazyMotion
+|                        |—— index.mjs
+|                    |—— MotionConfig
+|                        |—— index.mjs
+|                    |—— Reorder
+|                        |—— Group.mjs
+|                        |—— index.mjs
+|                        |—— Item.mjs
+|                        |—— utils
+|                            |—— check-reorder.mjs
+|                |—— context
+|                    |—— DeprecatedLayoutGroupContext.mjs
+|                    |—— LayoutGroupContext.mjs
+|                    |—— LazyContext.mjs
+|                    |—— MotionConfigContext.mjs
+|                    |—— MotionContext
+|                        |—— create.mjs
+|                        |—— index.mjs
+|                        |—— utils.mjs
+|                    |—— PresenceContext.mjs
+|                    |—— ReorderContext.mjs
+|                    |—— SwitchLayoutGroupContext.mjs
+|                |—— debug
+|                    |—— record.mjs
+|                |—— dom-entry.mjs
+|                |—— easing
+|                    |—— anticipate.mjs
+|                    |—— back.mjs
+|                    |—— circ.mjs
+|                    |—— cubic-bezier.mjs
+|                    |—— ease.mjs
+|                    |—— modifiers
+|                        |—— mirror.mjs
+|                        |—— reverse.mjs
+|                    |—— utils
+|                        |—— create-generator-easing.mjs
+|                        |—— get-easing-for-segment.mjs
+|                        |—— is-bezier-definition.mjs
+|                        |—— is-easing-array.mjs
+|                        |—— map.mjs
+|                |—— events
+|                    |—— add-dom-event.mjs
+|                    |—— add-pointer-event.mjs
+|                    |—— event-info.mjs
+|                    |—— use-dom-event.mjs
+|                    |—— utils
+|                        |—— is-primary-pointer.mjs
+|                |—— frameloop
+|                    |—— batcher.mjs
+|                    |—— frame.mjs
+|                    |—— index-legacy.mjs
+|                    |—— microtask.mjs
+|                    |—— render-step.mjs
+|                    |—— sync-time.mjs
+|                |—— gestures
+|                    |—— drag
+|                        |—— index.mjs
+|                        |—— use-drag-controls.mjs
+|                        |—— utils
+|                            |—— constraints.mjs
+|                            |—— lock.mjs
+|                        |—— VisualElementDragControls.mjs
+|                    |—— focus.mjs
+|                    |—— hover.mjs
+|                    |—— pan
+|                        |—— index.mjs
+|                        |—— PanSession.mjs
+|                    |—— press.mjs
+|                    |—— utils
+|                        |—— is-node-or-child.mjs
+|                |—— index.mjs
+|                |—— motion
+|                    |—— features
+|                        |—— animation
+|                            |—— exit.mjs
+|                            |—— index.mjs
+|                        |—— animations.mjs
+|                        |—— definitions.mjs
+|                        |—— drag.mjs
+|                        |—— Feature.mjs
+|                        |—— gestures.mjs
+|                        |—— layout
+|                            |—— MeasureLayout.mjs
+|                        |—— layout.mjs
+|                        |—— load-features.mjs
+|                        |—— viewport
+|                            |—— index.mjs
+|                            |—— observers.mjs
+|                    |—— index.mjs
+|                    |—— utils
+|                        |—— is-forced-motion-value.mjs
+|                        |—— is-motion-component.mjs
+|                        |—— symbol.mjs
+|                        |—— unwrap-motion-component.mjs
+|                        |—— use-motion-ref.mjs
+|                        |—— use-visual-element.mjs
+|                        |—— use-visual-state.mjs
+|                        |—— valid-prop.mjs
+|                |—— projection
+|                    |—— animation
+|                        |—— mix-values.mjs
+|                    |—— geometry
+|                        |—— conversion.mjs
+|                        |—— copy.mjs
+|                        |—— delta-apply.mjs
+|                        |—— delta-calc.mjs
+|                        |—— delta-remove.mjs
+|                        |—— models.mjs
+|                        |—— utils.mjs
+|                    |—— node
+|                        |—— create-projection-node.mjs
+|                        |—— DocumentProjectionNode.mjs
+|                        |—— group.mjs
+|                        |—— HTMLProjectionNode.mjs
+|                        |—— state.mjs
+|                    |—— shared
+|                        |—— stack.mjs
+|                    |—— styles
+|                        |—— scale-border-radius.mjs
+|                        |—— scale-box-shadow.mjs
+|                        |—— scale-correction.mjs
+|                        |—— transform.mjs
+|                    |—— use-instant-layout-transition.mjs
+|                    |—— use-reset-projection.mjs
+|                    |—— utils
+|                        |—— each-axis.mjs
+|                        |—— has-transform.mjs
+|                        |—— measure.mjs
+|                |—— render
+|                    |—— dom
+|                        |—— create-visual-element.mjs
+|                        |—— DOMKeyframesResolver.mjs
+|                        |—— DOMVisualElement.mjs
+|                        |—— features-animation.mjs
+|                        |—— features-max.mjs
+|                        |—— motion-minimal.mjs
+|                        |—— motion-proxy.mjs
+|                        |—— motion.mjs
+|                        |—— resize
+|                            |—— handle-element.mjs
+|                            |—— handle-window.mjs
+|                            |—— index.mjs
+|                        |—— scroll
+|                            |—— index.mjs
+|                            |—— info.mjs
+|                            |—— observe.mjs
+|                            |—— offsets
+|                                |—— edge.mjs
+|                                |—— index.mjs
+|                                |—— inset.mjs
+|                                |—— offset.mjs
+|                                |—— presets.mjs
+|                            |—— on-scroll-handler.mjs
+|                            |—— supports.mjs
+|                            |—— track.mjs
+|                        |—— use-render.mjs
+|                        |—— utils
+|                            |—— camel-to-dash.mjs
+|                            |—— create-config.mjs
+|                            |—— css-variables-conversion.mjs
+|                            |—— filter-props.mjs
+|                            |—— is-css-variable.mjs
+|                            |—— is-svg-component.mjs
+|                            |—— is-svg-element.mjs
+|                            |—— resolve-element.mjs
+|                            |—— unit-conversion.mjs
+|                        |—— value-types
+|                            |—— animatable-none.mjs
+|                            |—— defaults.mjs
+|                            |—— dimensions.mjs
+|                            |—— find.mjs
+|                            |—— get-as-type.mjs
+|                            |—— number.mjs
+|                            |—— test.mjs
+|                            |—— type-auto.mjs
+|                            |—— type-int.mjs
+|                        |—— viewport
+|                            |—— index.mjs
+|                    |—— html
+|                        |—— config-motion.mjs
+|                        |—— HTMLVisualElement.mjs
+|                        |—— use-props.mjs
+|                        |—— utils
+|                            |—— build-styles.mjs
+|                            |—— build-transform.mjs
+|                            |—— create-render-state.mjs
+|                            |—— make-none-animatable.mjs
+|                            |—— render.mjs
+|                            |—— scrape-motion-values.mjs
+|                            |—— transform.mjs
+|                    |—— store.mjs
+|                    |—— svg
+|                        |—— config-motion.mjs
+|                        |—— lowercase-elements.mjs
+|                        |—— SVGVisualElement.mjs
+|                        |—— use-props.mjs
+|                        |—— utils
+|                            |—— build-attrs.mjs
+|                            |—— camel-case-attrs.mjs
+|                            |—— create-render-state.mjs
+|                            |—— is-svg-tag.mjs
+|                            |—— path.mjs
+|                            |—— render.mjs
+|                            |—— scrape-motion-values.mjs
+|                            |—— transform-origin.mjs
+|                    |—— utils
+|                        |—— animation-state.mjs
+|                        |—— compare-by-depth.mjs
+|                        |—— flat-tree.mjs
+|                        |—— is-controlling-variants.mjs
+|                        |—— is-variant-label.mjs
+|                        |—— KeyframesResolver.mjs
+|                        |—— motion-values.mjs
+|                        |—— resolve-dynamic-variants.mjs
+|                        |—— resolve-variants.mjs
+|                        |—— setters.mjs
+|                        |—— variant-props.mjs
+|                    |—— VisualElement.mjs
+|                |—— utils
+|                    |—— array.mjs
+|                    |—— clamp.mjs
+|                    |—— delay.mjs
+|                    |—— distance.mjs
+|                    |—— errors.mjs
+|                    |—— get-context-window.mjs
+|                    |—— GlobalConfig.mjs
+|                    |—— hsla-to-rgba.mjs
+|                    |—— interpolate.mjs
+|                    |—— is-browser.mjs
+|                    |—— is-numerical-string.mjs
+|                    |—— is-ref-object.mjs
+|                    |—— is-zero-value-string.mjs
+|                    |—— memo.mjs
+|                    |—— mix
+|                        |—— color.mjs
+|                        |—— complex.mjs
+|                        |—— immediate.mjs
+|                        |—— index.mjs
+|                        |—— number.mjs
+|                        |—— visibility.mjs
+|                    |—— noop.mjs
+|                    |—— offsets
+|                        |—— default.mjs
+|                        |—— fill.mjs
+|                        |—— time.mjs
+|                    |—— pipe.mjs
+|                    |—— progress.mjs
+|                    |—— reduced-motion
+|                        |—— index.mjs
+|                        |—— state.mjs
+|                        |—— use-reduced-motion-config.mjs
+|                        |—— use-reduced-motion.mjs
+|                    |—— resolve-value.mjs
+|                    |—— shallow-compare.mjs
+|                    |—— subscription-manager.mjs
+|                    |—— time-conversion.mjs
+|                    |—— transform.mjs
+|                    |—— use-animation-frame.mjs
+|                    |—— use-constant.mjs
+|                    |—— use-cycle.mjs
+|                    |—— use-force-update.mjs
+|                    |—— use-in-view.mjs
+|                    |—— use-instant-transition-state.mjs
+|                    |—— use-instant-transition.mjs
+|                    |—— use-is-mounted.mjs
+|                    |—— use-isomorphic-effect.mjs
+|                    |—— use-motion-value-event.mjs
+|                    |—— use-unmount-effect.mjs
+|                    |—— velocity-per-second.mjs
+|                    |—— warn-once.mjs
+|                    |—— wrap.mjs
+|                |—— value
+|                    |—— index.mjs
+|                    |—— scroll
+|                        |—— use-element-scroll.mjs
+|                        |—— use-viewport-scroll.mjs
+|                    |—— types
+|                        |—— color
+|                            |—— hex.mjs
+|                            |—— hsla.mjs
+|                            |—— index.mjs
+|                            |—— rgba.mjs
+|                            |—— utils.mjs
+|                        |—— complex
+|                            |—— filter.mjs
+|                            |—— index.mjs
+|                        |—— numbers
+|                            |—— index.mjs
+|                            |—— units.mjs
+|                        |—— utils.mjs
+|                    |—— use-combine-values.mjs
+|                    |—— use-computed.mjs
+|                    |—— use-inverted-scale.mjs
+|                    |—— use-motion-template.mjs
+|                    |—— use-motion-value.mjs
+|                    |—— use-scroll.mjs
+|                    |—— use-spring.mjs
+|                    |—— use-time.mjs
+|                    |—— use-transform.mjs
+|                    |—— use-velocity.mjs
+|                    |—— use-will-change
+|                        |—— index.mjs
+|                        |—— is.mjs
+|                    |—— utils
+|                        |—— is-motion-value.mjs
+|                        |—— resolve-motion-value.mjs
+|            |—— framer-motion.dev.js
+|            |—— framer-motion.js
+|            |—— index.d.ts
+|            |—— projection.dev.js
+|            |—— three-entry.d.ts
+|        |—— dom
+|            |—— package.json
+|            |—— README.md
+|        |—— LICENSE.md
+|        |—— package.json
+|        |—— README.md
 |    |—— fs.realpath
 |        |—— index.js
 |        |—— LICENSE
@@ -8088,6 +8490,22 @@ Abstract:xxx
 |        |—— LICENSE
 |        |—— package.json
 |        |—— README.md
+|    |—— tslib
+|        |—— CopyrightNotice.txt
+|        |—— LICENSE.txt
+|        |—— modules
+|            |—— index.d.ts
+|            |—— index.js
+|            |—— package.json
+|        |—— package.json
+|        |—— README.md
+|        |—— SECURITY.md
+|        |—— tslib.d.ts
+|        |—— tslib.es6.html
+|        |—— tslib.es6.js
+|        |—— tslib.es6.mjs
+|        |—— tslib.html
+|        |—— tslib.js
 |    |—— type-check
 |        |—— lib
 |            |—— check.js
@@ -8586,10 +9004,12 @@ Abstract:xxx
 |—— postcss.config.js
 |—— public
 |    |—— favicon.png
+|    |—— home.svg
 |    |—— logoTimer.png
 |    |—— logoTimero.png
 |    |—— timeon.png
 |    |—— vite.svg
+|—— README.md
 |—— src
 |    |—— App.css
 |    |—— App.jsx
@@ -8613,6 +9033,7 @@ Abstract:xxx
 |            |—— Sunny.jpg
 |    |—— Components
 |        |—— BackgroundLayout.jsx
+|        |—— FloatingNavbar.jsx
 |        |—— index.jsx
 |        |—— MiniCard.jsx
 |        |—— WeatherCard.jsx
@@ -8628,27 +9049,8 @@ Abstract:xxx
 |—— vite.config.js
 ```
 ## Code Details
-### Tested Platform
-- software
-  ```
-  OS: Debian unstable (May 2021), Ubuntu LTS
-  Python: 3.8.5 (anaconda)
-  PyTorch: 1.7.1, 1.8.1
-  ```
-- hardware
-  ```
-  CPU: Intel Xeon 6226R
-  GPU: Nvidia RTX3090 (24GB)
-  ```
-### Hyper parameters
-```
-```
-## References
-- [paper-1]()
-- [paper-2]()
-- [code-1](https://github.com)
-- [code-2](https://github.com)
-  
+
+
 ## License
 
 ## Citing
