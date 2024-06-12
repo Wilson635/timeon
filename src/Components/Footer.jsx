@@ -5,7 +5,7 @@ import { socials } from "../constant";
 const Footer = () => {
   return (
     <Section crosses className="!px-0 !py-10" >
-      <div className="lg:px-20 flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col" >
+      <div className="lg:px-16 flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col" >
         <p className="text-n-4 lg:block text-white/50">
           © {new Date().getFullYear()}. All rights reserved.
         </p>
