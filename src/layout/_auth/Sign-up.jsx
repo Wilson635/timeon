@@ -39,7 +39,7 @@ const SignUp = () => {
     }
 
     return (
-        <div className="flex w-full h-screen">
+        <div className="mx-auto flex w-[1000px] h-screen">
             <div className="w-full flex items-center justify-center lg:w-1/2">
                 <div className=' w-11/12 pace-y-6 rounded-xl bg-white/5 p-6 sm:p-10'>
                     <h1 className='text-5xl font-semibold'>Welcome Back</h1>
