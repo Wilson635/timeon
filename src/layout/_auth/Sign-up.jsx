@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { ValidateEmail } from '../../lib/utils';
 import { useToast } from '../../Components/ui/toast/use-toast';
+import { UserMenu } from '../../Components/ui/userMenu';
 
 const SignUp = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
@@ -45,6 +46,7 @@ const SignUp = () => {
                     <p className='font-medium text-lg text-gray-500 mt-4'>Welcome back! Please enter you details.</p>
                     <div className='mt-5'>
                         <form action="" onSubmit={handleRegister}>
+                            <UserMenu />
                         <div className='flex flex-col'>
                                 <label className='text-sm/6 font-medium text-white'>Username</label>
                                 <input

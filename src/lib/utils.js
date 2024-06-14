@@ -10,3 +10,17 @@ export const ValidateEmail = (email) => {
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);
 }
+
+// Generate initials for differents users
+export const getInitials = (username) => {
+  if (!username) return "";
+  
+  const word = username.split(" ");
+  let initials = "";
+
+  for (let i = 0; i < Math.min(word.lenght, 2); i++) {
+    initials += word[i][0];
+  }
+
+  return initials.toUpperCase();
+}
