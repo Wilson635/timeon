@@ -12,10 +12,10 @@ export const ValidateEmail = (email) => {
 }
 
 // Generate initials for differents users
-export const getInitials = (username) => {
-  if (!username) return "";
+export const getInitials = (name) => {
+  if (!name) return "";
   
-  const word = username.split(" ");
+  const word = name.split(" ");
   let initials = "";
 
   for (let i = 0; i < Math.min(word.lenght, 2); i++) {

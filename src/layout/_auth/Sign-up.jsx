@@ -3,7 +3,6 @@ import clsx from 'clsx'
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { ValidateEmail } from '../../lib/utils';
 import { useToast } from '../../Components/ui/toast/use-toast';
-import { UserMenu } from '../../Components/ui/userMenu';
 
 const SignUp = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
@@ -11,7 +10,7 @@ const SignUp = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     // const [error, setError] = useState(null);
-    const {toast} = useToast();
+    const { toast } = useToast();
 
     // login function
     const handleRegister = async (e) => {
@@ -46,8 +45,7 @@ const SignUp = () => {
                     <p className='font-medium text-lg text-gray-500 mt-4'>Welcome back! Please enter you details.</p>
                     <div className='mt-5'>
                         <form action="" onSubmit={handleRegister}>
-                            <UserMenu />
-                        <div className='flex flex-col'>
+                            <div className='flex flex-col'>
                                 <label className='text-sm/6 font-medium text-white'>Username</label>
                                 <input
                                     // value={email}
@@ -80,7 +78,7 @@ const SignUp = () => {
                             </div>
                             <div className='flex flex-col mt-4'>
                                 <label className='text-sm/6 font-medium text-white'>Password</label>
-                                <div className= {clsx(
+                                <div className={clsx(
                                     ' flex items-center mt-3 w-full rounded-lg border-none bg-white/5',
                                     'focus:outline-none data-[focus]:outline-2 data-[focus]:-outline-offset-2 data-[focus]:outline-white/25'
                                 )}>

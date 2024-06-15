@@ -7,12 +7,14 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import home from "/home.svg"
+import SearchBar from "./ui/SearchBar";
+import { UserMenu } from "./ui/userMenu";
 
 
 const navItems = [
-    {icon: 'home', name: 'Accueil'},
-    {icon: '', name: 'About'},
-    {icon: '', name: 'Services'},
+  { icon: 'home', name: 'Accueil' },
+  { icon: '', name: 'About' },
+  { icon: '', name: 'Services' },
 ]
 
 export const FloatingNavbar = () => {
@@ -68,10 +70,16 @@ export const FloatingNavbar = () => {
             className="relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
           >
             {/* <span className="block sm:hidden">{navItem.icon}</span> */}
-            <img src={navItem.icon} alt=""/>
+            <img src={navItem.icon} alt="" />
             <span className=" text-sm !cursor-pointer">{navItem.name}</span>
           </a>
         ))}
+        <SearchBar />
+        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+          <span>Login</span>
+          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+        </button>
+        <UserMenu />
       </motion.div>
     </AnimatePresence>
   );
