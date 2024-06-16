@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { ValidateEmail } from '../../lib/utils';
 import { useToast } from '../../Components/ui/toast/use-toast';
+import { Link } from 'react-router-dom';
 
 const SignIn = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
@@ -105,9 +106,10 @@ const SignIn = () => {
                         </form>
                         <div className='mt-8 flex justify-center items-center'>
                             <p className='font-medium text-base'>Don't have an account?</p>
-                            <button
-                                // onClick={() => setAuthState('register')}
-                                className='ml-2 font-medium text-base text-violet-500'>Sign up</button>
+                            <Link
+                                to='/sign-up'
+                                className='ml-2 font-medium text-base text-violet-500'>Sign up
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -5,8 +5,6 @@ import WeatherLayout from "./pages/Weather"
 import Dashboard from "./pages/notes/Dashboard"
 
 
-
-
 export {
     Home,
     WeatherLayout,

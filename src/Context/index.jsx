@@ -1,5 +1,6 @@
 import { useContext, createContext, useState, useEffect } from "react";
 import axios from 'axios'
+import { useToast } from "../Components/ui/toast/use-toast";
 
 const StateContext = createContext()
 
@@ -11,6 +12,7 @@ export const StateContextProvider = ({ children }) => {
 
     // fetch api
     const fetchWeather = async () => {
+        const { toast } = useToast();
         const options = {
             method: 'GET',
             url: 'https://visual-crossing-weather.p.rapidapi.com/forecast',
@@ -37,7 +39,7 @@ export const StateContextProvider = ({ children }) => {
         } catch (e) {
             console.error(e);
             // if the api throws error.
-            alert('This place does not exist')
+            toast({ title:'This place does not exist'})
         }
     }
 

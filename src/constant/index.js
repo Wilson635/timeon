@@ -1,3 +1,4 @@
+import { AlarmClockCheckIcon, NotebookPenIcon, TimerIcon, Wallet } from "lucide-react";
 import {
     // benefitIcon1,
     // benefitIcon2,
@@ -9,6 +10,7 @@ import {
     // discord,
     discordBlack,
     facebook,
+    homeSmile,
     // figma,
     // file02,
     // framer,
@@ -34,7 +36,8 @@ import {
     telegram,
     twitter,
     // yourlogo,
-  } from "../assets";
+} from "../assets";
+import { SunIcon } from "@heroicons/react/24/solid";
 
 export const socials = [
     {
@@ -103,4 +106,32 @@ export const services = [
         status: "progress",
         imageUrl: roadmap4,
     },
-]; 
+];
+
+export const sidebarLinks = [
+    {
+        imgURL: homeSmile,
+        route: "/dashboard",
+        // label: "Home",
+    },
+    {
+        imgURL: homeSmile,
+        route: "/explore",
+        // label: "Explore",
+    },
+    {
+        imgURL: homeSmile,
+        route: "/all-users",
+        // label: "note",
+    },
+    {
+        imgURL: homeSmile,
+        route: "/alarm",
+        // label: "Alarm",
+    },
+    {
+        imgURL: homeSmile,
+        route: "/timerdown",
+        // label: "Timer",
+    },
+];

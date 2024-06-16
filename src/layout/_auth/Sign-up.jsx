@@ -115,14 +115,16 @@ const SignUp = () => {
                                 <button
                                     // onClick={handleLogin}
                                     type='submit'
-                                    className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500 rounded-xl text-white font-bold text-lg'>Sign Up</button>
+                                    className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500 rounded-xl text-white font-bold text-lg'>Sign Up
+                                    </button>
                             </div>
                         </form>
                         <div className='mt-8 flex justify-center items-center'>
                             <p className='font-medium text-base'>Already have an account?</p>
-                            <button
-                                // onClick={() => setAuthState('register')}
-                                className='ml-2 font-medium text-base text-violet-500'>Sign in</button>
+                            <Link
+                                to='/sign-in'
+                                className='ml-2 font-medium text-base text-violet-500'>Sign in
+                            </Link>
                         </div>
                     </div>
                 </div>

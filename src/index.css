@@ -10,13 +10,13 @@
   box-sizing: border-box;
 }
 
-.glassCard{
-  background:  rgba(225,225,225,0.18);
-  box-shadow:  0 8px 32px 0 rgba(31,38,135,0.37);
+.glassCard {
+  background: rgba(225, 225, 225, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 10px;
-  border: 1px solid rgba(225,225,225,0.18);
+  border: 1px solid rgba(225, 225, 225, 0.18);
 }
 
 @layer base {
@@ -25,3 +25,50 @@
   }
 }
 
+@layer utilities {
+
+  /* Topbar */
+  .topbar {
+    @apply sticky top-0 z-50 md:hidden w-full;
+  }
+
+  .shad-button_ghost {
+    @apply flex gap-4 items-center justify-start hover:bg-transparent hover:text-white !important;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #09090a;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+
+  .common-container {
+    @apply flex flex-col flex-1 items-center gap-10 overflow-scroll  px-5 md:px-8 custom-scrollbar;
+  }
+
+  /* Bottom bar */
+  .bottom-bar {
+    @apply z-50 flex-between w-full sticky bottom-0 rounded-t-[20px] bg-black px-5 py-4 md:hidden;
+  }
+/* Left sidebar */
+  .leftsidebar {
+    @apply hidden md:flex flex-col justify-between bg-black;
+  }
+
+  .leftsidebar-link {
+    @apply rounded-lg hover:bg-indigo-700 transition;
+  }
+}
