@@ -1,5 +1,7 @@
 import { AlarmClockCheckIcon, NotebookPenIcon, TimerIcon, Wallet } from "lucide-react";
 import {
+    alarmSolar,
+    cloudSun,
     // benefitIcon1,
     // benefitIcon2,
     // benefitIcon3,
@@ -16,6 +18,7 @@ import {
     // framer,
     // homeSmile,
     instagram,
+    notes,
     // notification2,
     // notification3,
     // notification4,
@@ -115,22 +118,17 @@ export const sidebarLinks = [
         // label: "Home",
     },
     {
-        imgURL: homeSmile,
-        route: "/explore",
-        // label: "Explore",
-    },
-    {
-        imgURL: homeSmile,
+        imgURL: notes,
         route: "/all-users",
         // label: "note",
     },
     {
-        imgURL: homeSmile,
+        imgURL: alarmSolar,
         route: "/alarm",
         // label: "Alarm",
     },
     {
-        imgURL: homeSmile,
+        imgURL: cloudSun,
         route: "/timerdown",
         // label: "Timer",
     },

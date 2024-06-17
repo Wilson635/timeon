@@ -1,15 +1,16 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import './App.css'
 import { FloatingNavbar } from './Components/FloatingNavbar'
 import { Toaster } from './Components/ui/toast/toaster'
 import { Dashboard, Home, SignIn, SignUp, WeatherLayout } from './layout'
 import React from "react"
+import { StateContextProvider } from "./Context"
 
 function App() {
   return (
     <main className='w-full h-screen text-white'>
-      {/* <Router>
-        <Routes>
+      {/* <Router> */}
+        {/* <Routes>
           <FloatingNavbar />
           <Route index element={<Home />} />
 
@@ -22,9 +23,12 @@ function App() {
 
 
 
-        </Routes>
-      </Router> */}
+        </Routes> */}
+      {/* </Router> */}
+      <StateContextProvider>
+        
       <Dashboard />
+      </StateContextProvider>
       <Toaster />
     </main>
   )

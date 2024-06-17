@@ -9,7 +9,10 @@ import grid from "./grid.png";
 import check2 from "./check-02.svg";
 import loading1 from "./loading-01.svg";
 import yourlogo from "./yourlogo.svg";
-import homeSmile from "./home-smile.svg";
+import homeSmile from "./homeSmile.svg";
+import alarmSolar from "./alarmSolar.svg";
+import cloudSun from "./cloudSun.svg";
+import notes from "./notes.svg";
 import file02 from "./file-02.svg";
 import searchMd from "./search-md.svg";
 import plusSquare from "./plus-square.svg";
@@ -122,5 +125,8 @@ export {
   instagram,
   telegram,
   twitter,
-  imagePlaceholder
+  imagePlaceholder,
+  alarmSolar,
+  cloudSun,
+  notes
 };
