@@ -119,17 +119,17 @@ export const sidebarLinks = [
     },
     {
         imgURL: notes,
-        route: "/notes",
+        route: "/dashboard/notes",
         // label: "note",
     },
     {
         imgURL: alarmSolar,
-        route: "/alarm",
+        route: "/dashboard/alarm",
         // label: "Alarm",
     },
     {
         imgURL: cloudSun,
-        route: "/timerdown",
+        route: "/dashboard/Weather",
         // label: "Timer",
     },
 ];

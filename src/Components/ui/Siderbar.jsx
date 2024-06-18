@@ -2,11 +2,11 @@ import { HeadphonesIcon, LogOutIcon, LucideBookHeadphones, LucideHeadphones, Use
 import { sidebarLinks } from "../../constant";
 import { imagePlaceholder } from "../../assets";
 import { UserIcon } from "@heroicons/react/20/solid";
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 
 const Sidebar = () => {
-    // const { pathname } = useLocation();
+    const { pathname } = useLocation();
 
     return (
         <nav className="leftsidebar items-center divide-y divide-slate-900 justify-center h-screen p-3 border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white">
@@ -43,13 +43,13 @@ const Sidebar = () => {
 
                 <ul className="flex flex-col gap-6">
                     {sidebarLinks.map((link) => {
-                        // const isActive = pathname === link.route;
-                        const isActive =  link.route;
+                        const isActive = pathname === link.route;
+                        // const isActive =  link.route;
 
                         return (
                             <li
                                 key={link.label}
-                                className={`leftsidebar-link group ${isActive && "bg-primary-500"
+                                className={`leftsidebar-link group ${isActive && "bg-yellow-600"
                                     }`}>
                                 <a
                                     href={link.route}
@@ -69,20 +69,24 @@ const Sidebar = () => {
 
             </div>
             <div className="flex flex-col gap-5 items-center justify-center mt-6">
-                <button
-                    className="flex gap-3 items-center justify-center w-10 h-10 bg-n-7 rounded-md transition-colors hover:bg-n-6 hover:text-rose-400"
-                // onClick={(e) => handleSignOut(e)}
-                >
-                    <LucideHeadphones />
-                    {/* <p className="small-medium lg:base-medium">Logout</p> */}
-                </button>
-                <button
-                    className="flex gap-3 items-center justify-center w-10 h-10 bg-n-7 rounded-md transition-colors hover:bg-n-6 hover:text-rose-400"
-                // onClick={(e) => handleSignOut(e)}
-                >
-                    <LogOutIcon />
-                    {/* <p className="small-medium lg:base-medium">Logout</p> */}
-                </button>
+                <div>
+                    <button
+                        className="flex gap-3 mt-5 items-center justify-center w-10 h-10  rounded-md transition-colors hover:bg-n-6 hover:text-rose-400"
+                    // onClick={(e) => handleSignOut(e)}
+                    >
+                        <LucideHeadphones />
+                        {/* <p className="small-medium lg:base-medium">Logout</p> */}
+                    </button>
+                </div>
+                <div>
+                    <button
+                        className="flex gap-3 items-center justify-center w-10 h-10 rounded-md transition-colors hover:bg-n-6 hover:text-rose-400"
+                    // onClick={(e) => handleSignOut(e)}
+                    >
+                        <LogOutIcon />
+                        {/* <p className="small-medium lg:base-medium">Logout</p> */}
+                    </button>
+                </div>
             </div>
 
         </nav>

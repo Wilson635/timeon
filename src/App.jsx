@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import './App.css'
 import { FloatingNavbar } from './Components/FloatingNavbar'
 import { Toaster } from './Components/ui/toast/toaster'
-import { Home, SignIn, SignUp, WeatherLayout } from './layout'
+import { Blank, Clock, Home, Notes, Profile, SignIn, SignUp } from './layout'
 import React from "react"
 import Dashboard from "./layout/pages/root/LayoutRoot";
 
@@ -29,15 +29,24 @@ const App = () => {
 
           </Routes>
         </Router> */}
-        <FloatingNavbar />
+        {/* <FloatingNavbar /> */}
         <Routes>
           <Route index element={<Home />} />
 
           {/* public routes */}
           <Route path='/sign-in' element={<SignIn />} />
           <Route path='/sign-up' element={<SignUp />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-            {/* <Route path='/dashboard' element={<WeatherLayout />} />
+          <Route path="/" element={<Dashboard />} >
+            <Route path="/dashboard" element={<Blank />} />
+            <Route path="/dashboard/alarm" element={<Clock />} />
+            <Route path="/dashboard/notes" element={<Notes />} />
+            <Route path="/dashboard/weather" element={<Blank />} />
+            <Route path="/profile" element={<Profile />} />
+          </Route>
+          {/* <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="/dashboard/Weather" element={<Blank />} />
+            <Route path="/dashboard/alarm" element={<Blank />} />
+            <Route path="/dashboard/note" element={<Blank />} />
           </Route> */}
 
 
