@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import './App.css'
 import { FloatingNavbar } from './Components/FloatingNavbar'
 import { Toaster } from './Components/ui/toast/toaster'
-import { Blank, Clock, Home, Notes, Profile, SignIn, SignUp } from './layout'
+import { Blank, Clock, DashboardUI, Home, Notes, Profile, SignIn, SignUp } from './layout'
 import React from "react"
 import Dashboard from "./layout/pages/root/LayoutRoot";
 
@@ -37,7 +37,7 @@ const App = () => {
           <Route path='/sign-in' element={<SignIn />} />
           <Route path='/sign-up' element={<SignUp />} />
           <Route path="/" element={<Dashboard />} >
-            <Route path="/dashboard" element={<Blank />} />
+            <Route path="/dashboard" element={<DashboardUI />} />
             <Route path="/dashboard/alarm" element={<Clock />} />
             <Route path="/dashboard/notes" element={<Notes />} />
             <Route path="/dashboard/weather" element={<Blank />} />

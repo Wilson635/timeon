@@ -1,9 +1,10 @@
 import React from 'react'
+import WeatherLayout from './Weather'
 
 const Blank = () => {
     return (
         <div>
-            This is a blank page
+            <WeatherLayout />
         </div>
     )
 }

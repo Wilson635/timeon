@@ -16,7 +16,7 @@ const WeatherLayout = () => {
     return (
         <>
             {/* <FloatingNavbar /> */}
-            <div className="common-container">
+            <div className="common-container w-full">
                 <nav className='w-full p-3 flex items-center'>
                     {/* <img src='/logoTimer.png' alt='logo' className='w-32' /> */}
                     <div className='glassCard backdrop:blur-0 w-[15rem] overflow-hidden shadow-2xl rounded flex items-center p-2 gap-2'>
