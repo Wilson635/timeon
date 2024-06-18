@@ -119,7 +119,7 @@ export const sidebarLinks = [
     },
     {
         imgURL: notes,
-        route: "/all-users",
+        route: "/notes",
         // label: "note",
     },
     {

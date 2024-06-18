@@ -2,16 +2,16 @@ import { HeadphonesIcon, LogOutIcon, LucideBookHeadphones, LucideHeadphones, Use
 import { sidebarLinks } from "../../constant";
 import { imagePlaceholder } from "../../assets";
 import { UserIcon } from "@heroicons/react/20/solid";
-// import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 
 const Sidebar = () => {
-    // const { pathname } = useLocation();
+    const { pathname } = useLocation();
 
     return (
         <nav className="leftsidebar items-center divide-y divide-slate-900 justify-center h-screen p-3 border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white">
             <div className="flex flex-col gap-5 items-center justify-center">
-                <a href="/" className="flex gap-3 items-center">
+                <a href="/" className="flex gap-3 items-center mb-8">
                     <img
                         src="/logo.png"
                         alt="logo"
@@ -43,8 +43,7 @@ const Sidebar = () => {
 
                 <ul className="flex flex-col gap-6">
                     {sidebarLinks.map((link) => {
-                        // const isActive = pathname === link.route;
-                        const isActive = link.route;
+                        const isActive = pathname === link.route;
 
                         return (
                             <li

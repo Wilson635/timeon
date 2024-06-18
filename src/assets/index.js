@@ -53,7 +53,7 @@ import hero from "./roadmap/hero.png";
 import roadmap1 from "./roadmap/alarm.png";
 import roadmap2 from "./roadmap/sablier.png";
 import roadmap3 from "./roadmap/timer.png";
-import roadmap4 from "./roadmap/rain.png";
+import roadmap4 from "./roadmap/weather.png";
 import undone from "./roadmap/undone.svg";
 
 import notification1 from "./notification/image-1.png";

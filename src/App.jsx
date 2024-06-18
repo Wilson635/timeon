@@ -1,36 +1,36 @@
-import { Route, Routes } from "react-router-dom"
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './App.css'
 import { FloatingNavbar } from './Components/FloatingNavbar'
 import { Toaster } from './Components/ui/toast/toaster'
-import { Dashboard, Home, SignIn, SignUp, WeatherLayout } from './layout'
+import { Home, SignIn, SignUp } from './layout'
 import React from "react"
-import { StateContextProvider } from "./Context"
+import LayoutRoot from "./layout/pages/root/LayoutRoot";
 
-function App() {
+const App = () => {
   return (
-    <main className='w-full h-screen text-white'>
-      {/* <Router> */}
-        {/* <Routes>
+    <>
+      <main className='w-full h-screen text-white'>
+
+        <Router>
           <FloatingNavbar />
-          <Route index element={<Home />} />
+          <Routes>
+            <Route index element={<Home />} />
 
-          public routes
-          <Route path='/sign-in' element={<SignIn />} />
-          <Route path='/sign-up' element={<SignUp />} />
-          <Route element={<Dashboard />}>
-            <Route path='/dashboard/weather' element={<WeatherLayout />} />
-          </Route>
+            {/* public routes */}
+            <Route path='/sign-in' element={<SignIn />} />
+            <Route path='/sign-up' element={<SignUp />} />
+            <Route element={<LayoutRoot />}>
+              <Route path='/dashboard' element={<WeatherLayout />} />
+            </Route>
 
 
 
-        </Routes> */}
-      {/* </Router> */}
-      <StateContextProvider>
-        
-      <Dashboard />
-      </StateContextProvider>
-      <Toaster />
-    </main>
+          </Routes>
+        </Router>
+        {/* <Dashboard /> */}
+        <Toaster />
+      </main>
+    </>
   )
 }
 
