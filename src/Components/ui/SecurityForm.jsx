@@ -4,8 +4,8 @@ const SecurityForm = () => {
     return (
         <div>
             <div className="px-4 sm:px-0">
-                <h3 className="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
-                <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+                <h3 className="text-base font-semibold leading-7 text-gray-900">Password</h3>
+                <p className="mt-1 max-w-2xl text-sm leading-6 text-gray-500">You must enter your current password to change your password.</p>
             </div>
             <div className="mt-6 border-t border-gray-100">
                 <dl className="divide-y divide-gray-100">
