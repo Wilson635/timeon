@@ -28,6 +28,7 @@ import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
 import heroBackground from "./hero/hero-background.jpg";
 import imagePlaceholder from "./icons/profile-placeholder.svg";
+import createNote from "./icons/add-post.svg";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
@@ -126,6 +127,7 @@ export {
   telegram,
   twitter,
   imagePlaceholder,
+  createNote,
   alarmSolar,
   cloudSun,
   notes
