@@ -63,24 +63,20 @@ const About = () => {
                                 </p>
                                 <ul role="list" className="mt-8 space-y-8 text-gray-600">
                                     <li className="flex gap-x-3">
-                                        <CloudArrowUpIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                                        <span>
-                                            <strong className="font-semibold text-gray-900">Push to deploy.</strong> Lorem ipsum, dolor sit amet
-                                            consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate
-                                            blanditiis ratione.
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24"><circle cx="7" cy="7" r="5" fill="#9f8c14" opacity="0.5"/><path fill="#9f8c14" d="M16.286 20C19.442 20 22 17.472 22 14.353c0-2.472-1.607-4.573-3.845-5.338C17.837 6.194 15.415 4 12.476 4C9.32 4 6.762 6.528 6.762 9.647c0 .69.125 1.35.354 1.962a4.351 4.351 0 0 0-.83-.08C3.919 11.53 2 13.426 2 15.765C2 18.104 3.919 20 6.286 20z"/></svg>                                        <span>
+                                            <strong className="font-semibold text-white mr-2">Wheather.</strong> 
+                                            Hourly weather forecast from your position. Check current conditions about your position with radar, hourly, and more.
                                         </span>
                                     </li>
                                     <li className="flex gap-x-3">
-                                        <LockClosedIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                                        <span>
-                                            <strong className="font-semibold text-gray-900">SSL certificates.</strong> Anim aute id magna aliqua
-                                            ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" viewBox="0 0 24 24"><path fill="#9f8c14" d="M3 8c0-2.828 0-4.243.879-5.121C4.757 2 6.172 2 9 2h6c2.828 0 4.243 0 5.121.879C21 3.757 21 5.172 21 8v8c0 2.828 0 4.243-.879 5.121C19.243 22 17.828 22 15 22H9c-2.828 0-4.243 0-5.121-.879C3 20.243 3 18.828 3 16z" opacity="0.5"/><path fill="#9f8c14" fill-rule="evenodd" d="M8.75 2.012v20h-1.5v-20zM1.25 8A.75.75 0 0 1 2 7.25h2a.75.75 0 0 1 0 1.5H2A.75.75 0 0 1 1.25 8m0 4a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1-.75-.75m0 4a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/><path fill="#9f8c14" d="M10.75 6.5a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75m0 3.5a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75"/></svg>                                        <span>
+                                            <strong className="font-semibold text-white">Task Manager.</strong> 
+                                            is a services showing what tasks you have to do. Here's more on how to get there and how to use it.
                                         </span>
                                     </li>
                                     <li className="flex gap-x-3">
-                                        <ServerIcon className="mt-1 h-5 w-5 flex-none text-indigo-600" aria-hidden="true" />
-                                        <span>
-                                            <strong className="font-semibold text-gray-900">Database backups.</strong> Ac tincidunt sapien
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><path fill="#9f8c14" d="M12 22c4.836 0 8.756-3.884 8.756-8.675c0-4.79-3.92-8.675-8.756-8.675s-8.757 3.884-8.757 8.675C3.243 18.115 7.163 22 12 22" opacity="0.5"/><path fill="#9f8c14" d="M12 8.747c.402 0 .729.324.729.723v3.556l2.219 2.198a.718.718 0 0 1 0 1.022a.734.734 0 0 1-1.032 0l-2.433-2.41a.72.72 0 0 1-.213-.51V9.47c0-.4.326-.723.73-.723"/><path fill="#9f8c14" fill-rule="evenodd" d="M8.24 2.34a.719.719 0 0 1-.232.996l-3.891 2.41a.734.734 0 0 1-1.006-.23a.719.719 0 0 1 .232-.996l3.892-2.41a.734.734 0 0 1 1.006.23m7.519 0a.734.734 0 0 1 1.005-.23l3.892 2.41a.719.719 0 0 1 .232.996a.734.734 0 0 1-1.006.23l-3.891-2.41a.719.719 0 0 1-.233-.996" clip-rule="evenodd"/></svg>                                        <span>
+                                            <strong className="font-semibold text-white">Database backups.</strong> Ac tincidunt sapien
                                             vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
                                         </span>
                                     </li>
