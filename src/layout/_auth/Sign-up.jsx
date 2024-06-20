@@ -4,7 +4,7 @@ import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { ValidateEmail } from '../../lib/utils';
 import { useToast } from '../../Components/ui/toast/use-toast';
 import { Link, useNavigate } from 'react-router-dom';
-import { account } from '../../lib/appwrite/config';
+import { account, appwriteConfig, avatars, databases } from '../../lib/appwrite/config';
 import { ID } from 'appwrite';
 import { useAuth } from '../../Context/AuthContext';
 
@@ -43,9 +43,23 @@ const SignUp = () => {
             email,
             password,
             username,
-        )
+        );
+        const avatarUrl = avatars.getInitials(username);
+        const newUser = await databases.createDocument(
+            appwriteConfig.databaseId,
+            appwriteConfig.userCollectionId,
+            ID.unique(),
+            {
+                accountId: (await signupPromise).$id,
+                email: email,
+                username: username,
+                avatar: avatarUrl,
+            }
+        );
+        
         signupPromise.then(function (res) {
             navigate('/sign-in')
+            return newUser;
         }, function (error) {
             console.log(error);
         })
