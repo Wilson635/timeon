@@ -6,7 +6,7 @@ import { Button } from "./ui/BorderMove";
 
 const Services = () => (
     <div className="container md:pb-10">
-      <Heading title="Some platform services" />
+      <Heading title="Our services" />
 
       <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
         {services.map((item) => {
