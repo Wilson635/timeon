@@ -12,7 +12,7 @@ const NoteCard = ({
     onPinned
 }) => {
     return (
-        <div className="flex h-a flex-col border rounded-xl text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white">
+        <div className="flex h-full max-h-80 flex-col border rounded-xl text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white">
             <div className="bg-gray-100 flex border-b items-center justify-between rounded-t-xl py-3 px-4 md:py-4 md:px-5">
                 <p className="mt-1 text-sm text-n-8">
                     {date}

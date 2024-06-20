@@ -3,7 +3,9 @@ import clsx from 'clsx'
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { ValidateEmail } from '../../lib/utils';
 import { useToast } from '../../Components/ui/toast/use-toast';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { account } from '../../lib/appwrite/config';
+import { ID } from 'appwrite';
 
 const SignUp = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
@@ -12,7 +14,7 @@ const SignUp = () => {
     const [password, setPassword] = useState();
     // const [error, setError] = useState(null);
     const { toast } = useToast();
-
+    const navigate = useNavigate();
     // login function
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -28,10 +30,23 @@ const SignUp = () => {
             toast({ title: 'Please enter a password.' });
         }
 
-        if (!password) {
-            // setError('Please enter a password');
+        if (!username) {
+            // setError('Please enter a username');
             toast({ title: 'Please enter an username.' });
         }
+
+        const signupPromise = account.create(
+            ID.unique(),
+            email,
+            password,
+            username,
+        )
+        signupPromise.then(function(res){
+            navigate('/sign-in')
+        }, function(error){
+            console.log(error);
+        })
+
     }
 
     const toggleShowPassword = () => {

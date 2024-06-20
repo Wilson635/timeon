@@ -3,14 +3,16 @@ import clsx from 'clsx'
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 import { ValidateEmail } from '../../lib/utils';
 import { useToast } from '../../Components/ui/toast/use-toast';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { account } from '../../lib/appwrite/config';
 
 const SignIn = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-    const [error, setError] = useState(null);
+    // const [error, setError] = useState(null);
     const {toast} = useToast();
+    const navigate = useNavigate();
 
     // login function
     const handleLogin = async (e) => {
@@ -25,6 +27,13 @@ const SignIn = () => {
         if (!password) {
             // setError('Please enter a password');
             toast({ title: 'Please enter a password.' });
+        }
+
+        try {
+            await account.createEmailPasswordSession(email, password);
+            navigate("/")
+        } catch (error) {
+            toast({ title: 'Something went wrong.' });
         }
     }
 
