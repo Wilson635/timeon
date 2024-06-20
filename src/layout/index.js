@@ -6,6 +6,7 @@ import DashboardUI from "./pages/Dashboard"
 import Home from "./pages/Home"
 import Notes from "./pages/Notes"
 import Profile from "./pages/Profile"
+import Support from "./pages/Support"
 import WeatherLayout from "./pages/Weather"
 
 
@@ -18,5 +19,6 @@ export {
     Notes,
     Clock,
     Profile,
-    DashboardUI
+    DashboardUI,
+    Support
 }

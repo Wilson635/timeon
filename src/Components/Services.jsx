@@ -5,7 +5,6 @@ import Heading from "./Heading";
 import { Button } from "./ui/BorderMove";
 
 const Services = () => (
-  <Section className="overflow-hidden" id="roadmap">
     <div className="container md:pb-10">
       <Heading title="Some platform services" />
 
@@ -51,7 +50,6 @@ const Services = () => (
         {/* <Gradiant /> */}
       </div>
     </div>
-  </Section>
 );
 
 export default Services;

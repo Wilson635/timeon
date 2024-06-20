@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-import { FloatingNavbar } from '../../Components/FloatingNavbar'
 import { BackgroundLayout, MiniCard, WeatherCard } from '../../Components'
 import { useStateContext } from '../../Context'
-import Footer from '../../Components/Footer'
 
 const WeatherLayout = () => {
     const [input, setInput] = useState('')
@@ -16,7 +14,7 @@ const WeatherLayout = () => {
     return (
         <>
             {/* <FloatingNavbar /> */}
-            <div className="common-container w-full">
+            <div>
                 <nav className='w-full p-3 flex items-center'>
                     {/* <img src='/logoTimer.png' alt='logo' className='w-32' /> */}
                     <div className='glassCard backdrop:blur-0 w-[15rem] overflow-hidden shadow-2xl rounded flex items-center p-2 gap-2'>

@@ -2,56 +2,39 @@ import { Route, Routes } from "react-router-dom";
 import './App.css'
 import { FloatingNavbar } from './Components/FloatingNavbar'
 import { Toaster } from './Components/ui/toast/toaster'
-import { Blank, Clock, DashboardUI, Home, Notes, Profile, SignIn, SignUp } from './layout'
+import { Blank, Clock, DashboardUI, Home, Notes, Profile, SignIn, SignUp, Support, WeatherLayout } from './layout'
 import React from "react"
 import Dashboard from "./layout/pages/root/LayoutRoot";
+import { StateContextProvider } from "./Context";
 
 const App = () => {
   return (
     <>
       <main className='w-full h-screen text-white'>
-
-        {/* <LayoutRoot /> */}
-
-        {/* <Router>
-          <FloatingNavbar />
+        <StateContextProvider>
           <Routes>
             <Route index element={<Home />} />
 
-            public routes
+            {/* public routes */}
             <Route path='/sign-in' element={<SignIn />} />
             <Route path='/sign-up' element={<SignUp />} />
-            <Route element={<LayoutRoot />}>
-              <Route path='/dashboard' element={<WeatherLayout />} />
+
+            {/* Private routes */}
+
+            <Route path="/" element={<Dashboard />} >
+              {/* pages */}
+              <Route path="/dashboard" element={<DashboardUI />} />
+              <Route path="/dashboard/alarm" element={<Clock />} />
+              <Route path="/dashboard/notes" element={<Notes />} />
+              <Route path="/dashboard/weather" element={<WeatherLayout />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/support" element={<Support />} />
             </Route>
 
 
 
           </Routes>
-        </Router> */}
-        {/* <FloatingNavbar /> */}
-        <Routes>
-          <Route index element={<Home />} />
-
-          {/* public routes */}
-          <Route path='/sign-in' element={<SignIn />} />
-          <Route path='/sign-up' element={<SignUp />} />
-          <Route path="/" element={<Dashboard />} >
-            <Route path="/dashboard" element={<DashboardUI />} />
-            <Route path="/dashboard/alarm" element={<Clock />} />
-            <Route path="/dashboard/notes" element={<Notes />} />
-            <Route path="/dashboard/weather" element={<Blank />} />
-            <Route path="/profile" element={<Profile />} />
-          </Route>
-          {/* <Route path="/dashboard" element={<Dashboard />}>
-            <Route path="/dashboard/Weather" element={<Blank />} />
-            <Route path="/dashboard/alarm" element={<Blank />} />
-            <Route path="/dashboard/note" element={<Blank />} />
-          </Route> */}
-
-
-
-        </Routes>
+        </StateContextProvider>
         <Toaster />
       </main>
     </>
