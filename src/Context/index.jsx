@@ -1,8 +1,9 @@
-import { useContext, createContext, useState, useEffect } from "react";
+import react, { useContext, createContext, useState, useEffect } from "react";
 import axios from 'axios'
 import { useToast } from "../Components/ui/toast/use-toast";
 
 const StateContext = createContext()
+export const SettingsContext = react.createContext({});
 
 export const StateContextProvider = ({ children }) => {
     const [weather, setWeather] = useState({})
