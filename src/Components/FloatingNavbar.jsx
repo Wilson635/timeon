@@ -6,19 +6,22 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import SearchBar from "./ui/SearchBar";
+// import SearchBar from "./ui/SearchBar";
 import { UserMenu } from "./ui/userMenu";
 import { Link } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 
 
 const navItems = [
   { icon: 'home', name: 'Accueil' },
-  { icon: '', name: 'About' },
-  { icon: '', name: 'Services' },
+  { icon: 'about', name: 'About' },
+  { icon: 'services', name: 'Services' },
 ]
 
 export const FloatingNavbar = () => {
   const { scrollYProgress } = useScroll();
+  const { user } = useAuth();
+
 
   // set true for the initial state so that nav bar is visible in the hero section
   const [visible, setVisible] = useState(true);
@@ -75,11 +78,16 @@ export const FloatingNavbar = () => {
           </a>
         ))}
         {/* <SearchBar /> */}
-        <Link to="/sign-up" className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>sign up</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </Link>
-        {/* <UserMenu /> */}
+        {user ? (
+
+          <Link to="/sign-up" className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
+            <span>sign up</span>
+            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
+          </Link>
+        ) : (
+
+          <UserMenu />
+        )}
       </motion.div>
     </AnimatePresence>
   );

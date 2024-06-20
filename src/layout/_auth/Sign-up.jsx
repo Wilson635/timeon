@@ -6,6 +6,7 @@ import { useToast } from '../../Components/ui/toast/use-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { account } from '../../lib/appwrite/config';
 import { ID } from 'appwrite';
+import { useAuth } from '../../Context/AuthContext';
 
 const SignUp = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
@@ -15,6 +16,8 @@ const SignUp = () => {
     // const [error, setError] = useState(null);
     const { toast } = useToast();
     const navigate = useNavigate();
+    const { isLoading } = useAuth();
+
     // login function
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -41,9 +44,9 @@ const SignUp = () => {
             password,
             username,
         )
-        signupPromise.then(function(res){
+        signupPromise.then(function (res) {
             navigate('/sign-in')
-        }, function(error){
+        }, function (error) {
             console.log(error);
         })
 
@@ -131,8 +134,17 @@ const SignUp = () => {
                                 <button
                                     // onClick={handleLogin}
                                     type='submit'
-                                    className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500 rounded-xl text-white font-bold text-lg'>Sign Up
-                                    </button>
+                                    className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500 rounded-xl text-white font-bold text-lg'
+                                >
+                                    {isLoading ? (
+                                        <div className="flex-center gap-2">
+                                            <Loader /> Loading...
+                                        </div>
+                                    ) : (
+
+                                        "Sign up"
+                                    )}
+                                </button>
                             </div>
                         </form>
                         <div className='mt-8 flex justify-center items-center'>

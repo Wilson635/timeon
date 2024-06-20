@@ -5,14 +5,17 @@ import { ValidateEmail } from '../../lib/utils';
 import { useToast } from '../../Components/ui/toast/use-toast';
 import { Link, useNavigate } from 'react-router-dom';
 import { account } from '../../lib/appwrite/config';
+import { useAuth } from '../../Context/AuthContext';
+import Loader from '../../Components/ui/Loader';
 
 const SignIn = () => {
     const [isShowPassword, setIsShowPassword] = useState(false);
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     // const [error, setError] = useState(null);
-    const {toast} = useToast();
+    const { toast } = useToast();
     const navigate = useNavigate();
+    const { isLoading } = useAuth();
 
     // login function
     const handleLogin = async (e) => {
@@ -31,7 +34,8 @@ const SignIn = () => {
 
         try {
             await account.createEmailPasswordSession(email, password);
-            navigate("/")
+            toast({ title: 'Great!!, login successful.' });
+            navigate("/dashboard")
         } catch (error) {
             toast({ title: 'Something went wrong.' });
         }
@@ -110,14 +114,26 @@ const SignIn = () => {
                                 <button
                                     // onClick={handleLogin}
                                     type='submit'
-                                    className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500 rounded-xl text-white font-bold text-lg'>Sign in</button>
+                                    className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01]  ease-in-out transform py-4 bg-violet-500 rounded-xl text-white font-bold text-lg'
+                                >
+                                    {isLoading ? (
+                                        <div className="flex-center gap-2">
+                                            <Loader /> Loading...
+                                        </div>
+                                    ) : (
+
+                                        "Sign in"
+                                    )}
+                                </button>
                             </div>
                         </form>
                         <div className='mt-8 flex justify-center items-center'>
                             <p className='font-medium text-base'>Don't have an account?</p>
                             <Link
                                 to='/sign-up'
-                                className='ml-2 font-medium text-base text-violet-500'>Sign up
+                                className='ml-2 font-medium text-base text-violet-500'
+                            >
+                                Sign Up
                             </Link>
                         </div>
                     </div>

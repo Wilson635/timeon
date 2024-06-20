@@ -1,9 +1,11 @@
 import React from 'react'
 import TopBar from '../../../Components/ui/TopBar'
 import Sidebar from '../../../Components/ui/Siderbar'
-import { Outlet } from 'react-router-dom'
+import { Navigate, Outlet } from 'react-router-dom'
+import { useAuth } from '../../../Context/AuthContext'
 // import { StateContextProvider } from '../../../Context'
 const Dashboard = () => {
+  const { user } = useAuth();
   return (
     <div className="w-full md:flex z-50">
       <TopBar />
@@ -11,7 +13,7 @@ const Dashboard = () => {
 
       <section className="flex flex-1 w-full p-4 bg-n-8">
         {/* <StateContextProvider> */}
-          <Outlet />
+        {user ? <Navigate to="/sign-in" /> : <Outlet />}
         {/* </StateContextProvider> */}
       </section>
 
