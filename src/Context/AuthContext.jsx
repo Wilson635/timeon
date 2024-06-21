@@ -43,6 +43,7 @@ export const useAuth = () => {
   return useContext(AuthContext);
 };
 
+
 // export const handleLogOut = async () => {
 //   const navigate = useNavigate();
 //   await signOut();

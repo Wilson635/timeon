@@ -5,13 +5,13 @@ import { Toaster } from './Components/ui/toast/toaster'
 import { Blank, Clock, DashboardUI, Home, Notes, Profile, SignIn, SignUp, Support, WeatherLayout } from './layout'
 import React from "react"
 import Dashboard from "./layout/pages/root/LayoutRoot";
-import { StateContextProvider } from "./Context";
+// import { StateContextProvider } from "./Context";
 
 const App = () => {
   return (
     <>
       <main className='w-full h-screen text-white'>
-        <StateContextProvider>
+        {/* <StateContextProvider> */}
           <Routes>
             <Route index element={<Home />} />
 
@@ -34,7 +34,7 @@ const App = () => {
 
 
           </Routes>
-        </StateContextProvider>
+        {/* </StateContextProvider> */}
         <Toaster />
       </main>
     </>

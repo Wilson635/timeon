@@ -24,6 +24,7 @@ import sliders04 from "./sliders-04.svg";
 import loading from "./loading.png";
 import background from "./background.jpg";
 import presentation from "./Macbook-Air-localhost.png"
+import coverBg from "./cover-01.png"
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
@@ -134,5 +135,6 @@ export {
   cloudSun,
   notes,
   presentation,
-  loader
+  loader,
+  coverBg
 };
