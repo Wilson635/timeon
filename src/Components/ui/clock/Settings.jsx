@@ -1,11 +1,11 @@
 import ReactSlider from 'react-slider';
-import './slider.css'
-import SettingsContext from "./SettingsContext";
+// import './slider.css'
 import {useContext} from "react";
 import BackButton from "./BackButton";
+import { SettingsContext } from '../../../Context';
 
 
-function Settings() {
+function SettingsClock() {
   const settingsInfo = useContext(SettingsContext);
   return(
     <div style={{textAlign:'left'}}>
@@ -37,4 +37,4 @@ function Settings() {
   );
 }
 
-export default Settings;
+export default SettingsClock;

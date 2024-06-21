@@ -1,9 +1,11 @@
 import { User } from "lucide-react";
 import { sidebarLinks } from "../../constant";
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "../../Context/AuthContext";
 
 
 const Sidebar = () => {
+    const { user } = useAuth();
     const { pathname } = useLocation();
 
     return (

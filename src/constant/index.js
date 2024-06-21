@@ -47,13 +47,13 @@ export const socials = [
         id: "0",
         title: "Discord",
         iconUrl: discordBlack,
-        url: "#",
+        url: "wilson635",
     },
     {
         id: "1",
         title: "Twitter",
         iconUrl: twitter,
-        url: "#",
+        url: "@ngahemeniw",
     },
     {
         id: "2",
@@ -65,13 +65,13 @@ export const socials = [
         id: "3",
         title: "Telegram",
         iconUrl: telegram,
-        url: "#",
+        url: "@SSIIServices",
     },
     {
         id: "4",
         title: "Facebook",
         iconUrl: facebook,
-        url: "#",
+        url: "Wil Ly",
     },
 ];
 
