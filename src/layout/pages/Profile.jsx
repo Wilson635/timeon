@@ -1,12 +1,9 @@
 import { User } from "lucide-react"
 import { coverBg, imagePlaceholder } from "../../assets"
 import { Link } from "react-router-dom"
-import { useAuth } from "../../Context/AuthContext"
 
 
 const Profile = () => {
-
-  const { user } = useAuth();
 
   return (
     <div className="overflow-hidden rounded-sm  bg-transparent shadow-default dark:border-strokedark dark:bg-boxdark">
@@ -88,7 +85,7 @@ const Profile = () => {
         </div>
         <div className="mt-4">
           <h3 className="mb-1.5 text-2xl font-semibold text-black dark:text-white">
-            {user.username}
+            <User />
           </h3>
           <p className="font-medium">{user?.email}</p>
           <div className="w-full max-w-md items-center justify-center mx-auto mt-11 mb-5.5 grid max-w-94 grid-cols-3 rounded-md border border-n-6 py-2.5 shadow-1 dark:border-strokedark dark:bg-n-7">

@@ -11,10 +11,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
     <BrowserRouter>
       <AuthProvider>
-        {/* <StateContextProvider> */}
-
+        <StateContextProvider>
           <App />
-        {/* </StateContextProvider> */}
+        </StateContextProvider>
       </AuthProvider>
     </BrowserRouter>
   </React.StrictMode>
