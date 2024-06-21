@@ -91,7 +91,6 @@ const Alarm = () => {
 
   return (
     <div>
-      <div className="timer-display">{currentTime}</div>
       <div>
         <input
           id="hourInput"
