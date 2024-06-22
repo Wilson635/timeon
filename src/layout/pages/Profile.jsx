@@ -1,5 +1,4 @@
 import { User } from "lucide-react"
-import { coverBg, imagePlaceholder } from "../../assets"
 import { Link } from "react-router-dom"
 
 
@@ -9,7 +8,7 @@ const Profile = () => {
     <div className="overflow-hidden rounded-sm  bg-transparent shadow-default dark:border-strokedark dark:bg-boxdark">
       <div className="relative z-20 h-35 md:h-65">
         <img
-          src={coverBg}
+          src="/cover-01.png"
           alt="profile cover"
           className="h-full w-full rounded-md rounded-tr-sm object-cover object-center"
         />
@@ -87,7 +86,7 @@ const Profile = () => {
           <h3 className="mb-1.5 text-2xl font-semibold text-black dark:text-white">
             <User />
           </h3>
-          <p className="font-medium">{user?.email}</p>
+          <p className="font-medium">UX Designer</p>
           <div className="w-full max-w-md items-center justify-center mx-auto mt-11 mb-5.5 grid max-w-94 grid-cols-3 rounded-md border border-n-6 py-2.5 shadow-1 dark:border-strokedark dark:bg-n-7">
             <div className="flex flex-col items-center justify-center gap-1 border-r border-n-6 px-4 dark:border-strokedark xsm:flex-row">
               <span className="font-semibold text-black dark:text-n-9">

@@ -30,7 +30,7 @@ const Alarm = () => {
                     if (`${alarm.alarmHour}:${alarm.alarmMinute}` === `${hours}:${minutes}`) {
                         alarmSound.play();
                         alarmSound.loop = true;
-                        toast({ title: "Helloooo il est l'heure", alarm });
+                        toast({ title: `Helloooo votre alarme de , ${alarm.alarmHour}:${alarm.alarmMinute} est prête` });
                     }
                 }
             });
