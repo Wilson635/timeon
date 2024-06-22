@@ -91,14 +91,14 @@ const Alarm = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container-1">
             <div className="bg-elem"></div>
             <div className="bg-elem"></div>
             <div className="bg-elem"></div>
             <div className="content mt-12 py-20">
                 <h3 className="type">Alarm</h3>
             </div>
-            <div className="wrapper flex gap-3 items-center justify-center mx-auto px-8">
+            <div className="wrapper-1 flex gap-3 items-center justify-center mx-auto px-8">
                 <input
                     id="hourInput"
                     type="number"

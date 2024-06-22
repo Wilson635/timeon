@@ -1,4 +1,4 @@
-.container {
+.container-1 {
     position: relative;
     width: 100%;
     max-width: 800px;
@@ -25,7 +25,7 @@ i {
     margin-bottom: 25px;
 }
 
-.wrapper {
+.wrapper-1 {
     padding: 30px 0;
     border-radius: 10px;
     margin-top: 15px;
@@ -38,7 +38,7 @@ i {
     transition: all 0.3s ease;
 }
 
-.wrapper:hover {
+.wrapper-1:hover {
     box-shadow: none;
 }
 
@@ -199,7 +199,7 @@ i {
 
 /* responsive */
 @media (max-width: 600px) {
-    .container {
+    .container-1 {
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -234,7 +234,7 @@ i {
 }
 
 @media (max-width: 400px) {
-    .container {
+    .container-1 {
         padding: 0 10px;
     }
 

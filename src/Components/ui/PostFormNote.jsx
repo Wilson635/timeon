@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ID } from 'appwrite';
 import { appwriteConfig, databases } from '../../lib/appwrite/config';
+import { Button } from '@headlessui/react';
 
 
 const PostFormNote = () => {
@@ -121,7 +122,7 @@ const PostFormNote = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-gray-800 text-gray-300 p-4 rounded-md w-96 mx-auto">
+    <form onSubmit={handleSubmit} className="bg-transparent text-gray-300 p-4 rounded-md w-96 mx-auto">
       <div className="mb-4">
         <label className="block mb-2 text-white">Title</label>
         <input
@@ -139,7 +140,7 @@ const PostFormNote = () => {
           className="w-full p-2 bg-gray-700 text-white rounded-md"
         />
       </div>
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <input
           type="text"
           value={task}
@@ -148,8 +149,8 @@ const PostFormNote = () => {
           placeholder="Appuyez sur 'Entrée' pour créer des sous-tâches"
           className="w-full p-2 bg-gray-700 text-white rounded-md"
         />
-      </div>
-      <ul className="mb-4">
+      </div> */}
+      {/* <ul className="mb-4">
         {subTasks.map((subTask, index) => (
           <li key={index} className="flex items-center mb-2">
             <input
@@ -161,7 +162,7 @@ const PostFormNote = () => {
             <span className="p-2 bg-gray-700 text-white rounded-md">{subTask.text}</span>
           </li>
         ))}
-      </ul>
+      </ul> */}
       <div className="mb-4">
         <label className="block mb-2 text-white">Définir un rappel :</label>
         <input
@@ -171,8 +172,17 @@ const PostFormNote = () => {
           className="w-full p-2 bg-gray-700 text-white rounded-md"
         />
       </div>
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded-md">Terminé</button>
-      <div className="mt-4">
+      {/* <button type="submit" className="bg-blue-500 text-white p-2 rounded-md">Terminé</button> */}
+      <div className="mt-4 items-center justify-center flex text-center">
+        <Button
+          className="inline-flex gap-2 items-center justify-center rounded-md bg-indigo-700 w-[18rem] text-center py-3 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-yellow-600 data-[open]:bg-yellow-700 data-[focus]:outline-1 data-[focus]:outline-white"
+          // onClick={close}
+          type="submit"
+        >
+          Add task
+        </Button>
+      </div>
+      {/* <div className="mt-4">
         <h3 className="text-white mb-2">Tâches complétées :</h3>
         <ul>
           {completedSubTasks.map((subTask, index) => (
@@ -187,7 +197,7 @@ const PostFormNote = () => {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
     </form>
   );
 };

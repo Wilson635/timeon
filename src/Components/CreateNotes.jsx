@@ -49,14 +49,7 @@ const CreateNote = () => {
                     </DialogTitle>
                   </div>
                   <PostFormNote />
-                  <div className="mt-4 items-center justify-center flex text-center">
-                    <Button
-                      className="inline-flex gap-2 items-center justify-center rounded-md bg-indigo-700 w-[18rem] text-center py-3 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-yellow-600 data-[open]:bg-yellow-700 data-[focus]:outline-1 data-[focus]:outline-white"
-                      onClick={close}
-                    >
-                      Add task
-                    </Button>
-                  </div>
+                  
                 </DialogPanel>
               </TransitionChild>
             </div>

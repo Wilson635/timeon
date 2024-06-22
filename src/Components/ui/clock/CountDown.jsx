@@ -173,7 +173,7 @@ const CountDown = () => {
     });
 
     return (
-        <div className="container">
+        <div className="container-1">
             <div className="bg-elem"></div>
             <div className="bg-elem"></div>
             <div className="bg-elem"></div>
@@ -184,7 +184,7 @@ const CountDown = () => {
             <div className="main-container">
                 {view === 'clock' && (
                     <div className="clock">
-                        <div className="wrapper">
+                        <div className="wrapper-1">
                             <div className="main">
                                 <div className="hour">
                                     <p className="number" id="hour">00</p>
@@ -216,7 +216,7 @@ const CountDown = () => {
 
                 {view === 'stopwatch' && (
                     <div className="stopwatch">
-                        <div className="wrapper">
+                        <div className="wrapper-1">
                             <div className="main">
                                 <div className="hour">
                                     <p className="number" id="stopwatch-hour">{addTrailingZero(stopwatch.hours)}</p>
@@ -261,7 +261,7 @@ const CountDown = () => {
 
                 {view === 'timer' && (
                     <div className="timer">
-                        <div className="wrapper">
+                        <div className="wrapper-1">
                             <div className="main">
                                 <div className="hour">
                                     <p className="number" id="timer-hour">{addTrailingZero(timer.hours)}</p>

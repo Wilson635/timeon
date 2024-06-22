@@ -18,17 +18,17 @@ const Hero = () => {
             }}
           />
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden gap-6 sm:mb-8 sm:flex sm:justify-center">
+        <div className="mx-auto items-center justify-center  max-w-2xl py-32 sm:py-48 lg:py-56">
+          <div className="gap-6 sm:mb-8 sm:flex sm:justify-center">
             <img src="/logo.png" alt="" className='w-36 h-36' />
             <img src="/timeon.png" alt="" />
           </div>
           <div className="text-center">
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <span className="mt-6 text-lg leading-8 text-gray-600">
               A platform for managing one's schedule and scheduling tasks.
               Notification based on recorded spots, weather conditions.
-            </p>
-            <div className="w-full mt-12 px-28">
+            </span>
+            <div className="w-full mt-12 px-28 ">
               <Link to="/sign-in">
                 <Button
                   //   random duration will be fun , I think , may be not

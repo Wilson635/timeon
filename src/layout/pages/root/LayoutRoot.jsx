@@ -12,9 +12,7 @@ const Dashboard = () => {
       <Sidebar />
 
       <section className="flex flex-1 w-full p-4 bg-n-8">
-        {/* <StateContextProvider> */}
-        {user ? <Navigate to="/sign-in" /> : <Outlet />}
-        {/* </StateContextProvider> */}
+        {user ? <Outlet /> : <Navigate to="/sign-in" />}
       </section>
 
       {/* <Bottombar /> */}

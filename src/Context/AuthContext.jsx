@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Loader from "../Components/ui/Loader";
+import { account } from "../lib/appwrite/config";
 
 const AuthContext = createContext();
 
