@@ -25,11 +25,17 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  
+  const logoutUser = async () => {
+    await account.deleteSession("current");
+    setUser(null);
+  };
+
+
 
   const contextData = {
     user,
-    loading, // Add loading state to context
+    loading,
+    logoutUser // Add loading state to context
   };
 
   return (

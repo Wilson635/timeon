@@ -1,12 +1,12 @@
 import { Legend, Menu, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { ArrowDownIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import { getInitials } from '../../lib/utils'
 import { Link } from 'react-router-dom'
-import { useAuth } from '../../Context/AuthContext'
+// import { useAuth } from '../../Context/AuthContext'
 
 export const UserMenu = () => {
-    const { user } = useAuth();
+    // const { user } = useAuth();
     return (
         <div className="top-16 w-auto text-right">
             <Menu as="div" className="relative inline-block text-left">
@@ -14,7 +14,7 @@ export const UserMenu = () => {
                     
                     <Menu.Button className="inline-flex w-full justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
                         <div className='items-center px-4 py-4 border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] dark:text-white text-black flex rounded-full justify-center'>
-                            {user.avatar}
+                            <ArrowDownIcon />
                             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
                         </div>
                         {/* <ChevronDownIcon
@@ -76,6 +76,7 @@ export const UserMenu = () => {
                             <Menu.Item>
                                 {({ active }) => (
                                     <button
+                                        onClick={() => {}}
                                         className={`${active ? 'bg-red-500 text-white' : 'text-gray-900'
                                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                                     >

@@ -50,7 +50,7 @@ const SignIn = () => {
             <div className="w-full flex items-center justify-center lg:w-1/2">
                 <div className=' w-11/12 pace-y-6 rounded-xl bg-white/5 p-6 sm:p-10'>
                     <h1 className='text-5xl font-semibold'>Welcome Back</h1>
-                    <p className='font-medium text-lg text-gray-500 mt-4'>Welcome back! Please enter you details.</p>
+                    <span className='font-medium text-lg text-gray-500 mt-4'>Welcome back! Please enter you details.</span>
                     <div className='mt-5'>
                         <form action="" onSubmit={handleLogin}>
                             <div className='flex flex-col'>
@@ -128,7 +128,7 @@ const SignIn = () => {
                             </div>
                         </form>
                         <div className='mt-8 flex justify-center items-center'>
-                            <p className='font-medium text-base'>Don't have an account?</p>
+                            <span className='font-medium text-base'>Don't have an account?</span>
                             <Link
                                 to='/sign-up'
                                 className='ml-2 font-medium text-base text-violet-500'
@@ -139,7 +139,7 @@ const SignIn = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden relative w-1/2 h-full lg:flex items-center justify-center bg-none">
+            <div className=" relative w-1/2 h-full lg:flex items-center justify-center bg-none">
                 <div className="w-60 h-60 rounded-full bg-gradient-to-tr from-violet-500 to-pink-500 animate-spin" />
                 <div className="w-full h-1/2 absolute bottom-0 rounded-md bg-white/10 backdrop-blur-lg" />
             </div>

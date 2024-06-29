@@ -9,7 +9,7 @@ import {
 // import SearchBar from "./ui/SearchBar";
 import { UserMenu } from "./ui/userMenu";
 import { Link } from "react-router-dom";
-import { useAuth } from "../Context/AuthContext";
+// import { useAuth } from "../Context/AuthContext";
 
 
 const navItems = [
@@ -20,7 +20,7 @@ const navItems = [
 
 export const FloatingNavbar = () => {
   const { scrollYProgress } = useScroll();
-  const { user } = useAuth();
+  // const { user } = useAuth();
 
 
   // set true for the initial state so that nav bar is visible in the hero section
@@ -78,14 +78,15 @@ export const FloatingNavbar = () => {
           </a>
         ))}
         {/* <SearchBar /> */}
-        {user ? (
+        <UserMenu />
+        {/* {user ? (
           <UserMenu />
         ) : (
           <Link to="/sign-up" className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
             <span>sign up</span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
           </Link>
-        )}
+        )} */}
       </motion.div>
     </AnimatePresence>
   );
