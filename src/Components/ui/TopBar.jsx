@@ -19,7 +19,7 @@ const TopBar = () => {
           />
         </a>
 
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           <button
             className="shad-button_ghost"
             onClick={() => signOut()}>
@@ -32,7 +32,7 @@ const TopBar = () => {
               className="h-8 w-8 rounded-full"
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -122,7 +122,7 @@ const PostFormNote = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="bg-transparent text-gray-300 p-4 rounded-md w-96 mx-auto">
+    <form onSubmit={handleSubmit} className="container bg-transparent text-gray-300 p-4 rounded-md mx-auto">
       <div className="mb-4">
         <label className="block mb-2 text-white">Title</label>
         <input

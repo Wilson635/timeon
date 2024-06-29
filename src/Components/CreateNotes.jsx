@@ -36,7 +36,7 @@ const CreateNote = () => {
                 leaveFrom="opacity-100 transform-[scale(100%)]"
                 leaveTo="opacity-0 transform-[scale(95%)]"
               >
-                <DialogPanel className="w-full items-center justify-center max-w-md rounded-xl bg-white/5 p-6 backdrop-blur-2xl">
+                <DialogPanel className="w-full items-center justify-center max-w-md rounded-xl border-n-9 border p-6 backdrop-blur-2xl">
                   <div className='flex flex-col items-center justify-center gap-y-2'>
                     <img
                       src={createNote}

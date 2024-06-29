@@ -29,7 +29,7 @@ const Hero = () => {
               Notification based on recorded spots, weather conditions.
             </span>
             <div className="w-full mt-12 px-28 ">
-              <Link to="/sign-in">
+              <Link to="/dashboard">
                 <Button
                   //   random duration will be fun , I think , may be not
                   duration={Math.floor(Math.random() * 10000) + 10000}
