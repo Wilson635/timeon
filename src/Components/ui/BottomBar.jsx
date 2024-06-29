@@ -13,13 +13,13 @@ const Bottombar = () => {
             key={`bottombar-${link.label}`}
             to={link.route}
             className={`${
-              isActive && "rounded-[10px] bg-primary-500 "
+              isActive && "rounded-[10px] bg-yellow-600 "
             } flex-center flex-col gap-1 p-2 transition`}>
             <img
               src={link.imgURL}
               alt={link.label}
-              width={16}
-              height={16}
+              width={30}
+              height={30}
               className={`${isActive && "invert-white"}`}
             />
 

@@ -144,7 +144,7 @@ export const bottombarLinks = [
     {
         imgURL: notes,
         route: "/dashboard/notes",
-        label: "note",
+        // label: "note",
     },
     {
         imgURL: alarmSolar,

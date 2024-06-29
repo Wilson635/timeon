@@ -5,7 +5,7 @@ import CountDown from '../../Components/ui/clock/CountDown';
 const Clock = () => {
   return (
     <>
-      <div className='grid grid-cols-2 gap-x-5 max-w-6xl w-full mx-auto items-center justify-center'>
+      <div className='grid lg:grid-cols-2 grid-cols-1 gap-x-5 max-w-6xl w-full mx-auto items-center justify-center'>
         <div>
           <Alarm />
         </div>
