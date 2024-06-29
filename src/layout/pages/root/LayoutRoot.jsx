@@ -2,6 +2,7 @@ import React from 'react'
 import TopBar from '../../../Components/ui/TopBar'
 import Sidebar from '../../../Components/ui/Siderbar'
 import { Navigate, Outlet } from 'react-router-dom'
+import Bottombar from '../../../Components/ui/BottomBar'
 // import { useAuth } from '../../../Context/AuthContext'
 // import { StateContextProvider } from '../../../Context'
 const Dashboard = () => {
@@ -16,7 +17,7 @@ const Dashboard = () => {
         <Outlet />
       </section>
 
-      {/* <Bottombar /> */}
+      <Bottombar />
     </div>
   )
 }

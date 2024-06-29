@@ -133,3 +133,27 @@ export const sidebarLinks = [
         // label: "Timer",
     },
 ];
+
+
+export const bottombarLinks = [
+    {
+        imgURL: homeSmile,
+        route: "/dashboard",
+        // label: "Home",
+    },
+    {
+        imgURL: notes,
+        route: "/dashboard/notes",
+        label: "note",
+    },
+    {
+        imgURL: alarmSolar,
+        route: "/dashboard/alarm",
+        // label: "Alarm",
+    },
+    {
+        imgURL: cloudSun,
+        route: "/dashboard/Weather",
+        // label: "Timer",
+    },
+  ];
