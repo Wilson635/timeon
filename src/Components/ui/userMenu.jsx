@@ -3,6 +3,7 @@ import { Fragment, useEffect, useRef, useState } from 'react'
 import { ArrowDownIcon, ChevronDownIcon } from '@heroicons/react/20/solid'
 import { getInitials } from '../../lib/utils'
 import { Link } from 'react-router-dom'
+import { ChevronDownSquareIcon } from 'lucide-react'
 // import { useAuth } from '../../Context/AuthContext'
 
 export const UserMenu = () => {
@@ -14,7 +15,7 @@ export const UserMenu = () => {
                     
                     <Menu.Button className="inline-flex w-full justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75">
                         <div className='items-center px-4 py-4 border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] dark:text-white text-black flex rounded-full justify-center'>
-                            <ArrowDownIcon />
+                            <ChevronDownIcon className='w-4' />
                             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
                         </div>
                         {/* <ChevronDownIcon
